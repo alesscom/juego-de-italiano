@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>juego de italiano</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <script src="juegodos.js"></script>
+    </head>
+    <body>
+        <div>
+            <button class="btn btn-danger" onclick="salir()">uscire</button>
+            <h3 id="idn">contador de fails: </h3>
+            <h3 id="contador"></h3>
+        </div>
+        <center>
+        <h1>Gioco per imparare l'italiano</h1>
+        <br>
+        <h2>Seleziona la parola corretta </h2>
+        <span>
+            <button class="btn btn-primary" onclick="respuesta_incorrecta()">fratelo</button>
+            <button class="btn btn-primary" onclick="respuesta_correcta()">fratello</button>
+        </span><hr>
+        <span><h3 id="respuesta"></h3></span>
+        <span><button id="siguiente"class=" btn btn-primary"onclick="next()" style="display: none;">seguente</button></span>
+        </center>
+    </body>
+</html>
